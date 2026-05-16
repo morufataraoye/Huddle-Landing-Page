@@ -1,0 +1,63 @@
+:root{
+    --font-size: clamp(0.875rem, 1.5vw, 1rem);
+    --paragraph-font-size: clamp(1rem, 2vw, 1.125rem);
+    --padding-container: 2rem clamp(1rem, 4vw, 3rem);
+    --padding-header: clamp(1.5rem, 4vw, 3rem);;
+}
+body{
+    margin: 0;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+header{
+    padding: var(--padding-header);
+}
+header img{
+    width: clamp(7rem, 15vw, 12rem);
+}
+.container{
+    padding: var(--padding-container);
+}
+
+figure{
+    margin: 0;
+    display: flex;
+    color: white;
+    align-items: center;
+    gap: 3rem;
+}
+figcaption{
+    width: 45%; 
+    padding-right: 4rem; 
+}
+figure img{
+    width: 55%;
+}
+h1{
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-bottom: 1rem;
+}
+p{
+    font-size: var(--paragraph-font-size);
+    line-height: 1.6rem;
+    margin-bottom: 2rem;
+}
+button{
+    padding-inline: clamp(2rem, 5vw, 4rem);
+    padding-block: 1rem;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    font-size: var(--font-size);
+    box-shadow: 0 0.3rem 0.8rem hsl(0, 0%, 32%);
+}
+button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
