@@ -4,13 +4,13 @@
     --padding-container: 2rem clamp(1rem, 4vw, 3rem);
     --padding-header: clamp(1.5rem, 4vw, 3rem);;
     --hover-color: hsl(300, 69%, 71%);
-    --background-color: hsl(257, 40%, 49%);
+    --background-primary-color: hsl(257, 40%, 49%);
     --shadow-color: 0 0.3rem 0.8rem hsl(0, 0%, 32%);
     --button-bg-color: white;
 }
 body{
     margin: 0;
-    background-color: var(--background-color);
+    background-color: var(--background-primary-color);
     background-image: url(bg-desktop.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,7 +30,7 @@ header img{
 figure{
     margin: 0;
     display: flex;
-    color: white;
+    color: var(--button-bg-color);
     align-items: center;
     gap: 5rem;
 }
@@ -43,7 +43,7 @@ figure img{
 }
 h1{
     font-size: clamp(1.5rem, 4vw, 2rem);
-    margin-block-end: 1rem;
+    margin-block-end: clamp(1rem, 3vw, 1.5rem);
     font-family: 'Poppins', sans-serif;
 }
 p{
@@ -57,16 +57,16 @@ button{
     border: none;
     cursor: pointer;
     background-color: var(--button-bg-color);
-    color: hsl(257, 40%, 49%);
+    color: var(--background-primary-color);
     font-size: var(--font-size);
     box-shadow: var(--shadow-color);
 }
 button:hover{
     background-color:var(--hover-color);
-    color: white;
+    color: var(--button-bg-color);
 }
 footer{
-    color: white;
+    color: var(--button-bg-color);
     display: flex;
     justify-content: right;
     padding-inline-end: 5rem;
@@ -75,7 +75,7 @@ footer{
     margin-block-end: 3rem;
 }
 .icon{
-    border: 1px solid white;
+    border: 1px solid var(--button-bg-color);
     border-radius: 50%;
     padding: 0.6rem;
 }
