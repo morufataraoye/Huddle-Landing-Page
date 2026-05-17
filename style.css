@@ -6,7 +6,8 @@
     --hover-color: hsl(300, 69%, 71%);
     --background-primary-color: hsl(257, 40%, 49%);
     --shadow-color: 0 0.3rem 0.8rem hsl(0, 0%, 32%);
-    --button-bg-color: white;
+    --primary-white-color: white;
+    --one-rem: clamp(1rem, 4vw, 3rem);
 }
 body{
     margin: 0;
@@ -30,7 +31,7 @@ header img{
 figure{
     margin: 0;
     display: flex;
-    color: var(--button-bg-color);
+    color: var(--primary-white-color);
     align-items: center;
     gap: 5rem;
 }
@@ -52,35 +53,35 @@ p{
 }
 button{
     padding-inline: clamp(2rem, 5vw, 4rem);
-    padding-block: 1rem;
+    padding-block: var(--font-size);
     border-radius: 2rem;
     border: none;
     cursor: pointer;
-    background-color: var(--button-bg-color);
+    background-color: var(--primary-white-color);
     color: var(--background-primary-color);
     font-size: var(--font-size);
     box-shadow: var(--shadow-color);
 }
 button:hover{
     background-color:var(--hover-color);
-    color: var(--button-bg-color);
+    color: var(--primary-white-color);
 }
 footer{
-    color: var(--button-bg-color);
+    color: var(--primary-white-color);
     display: flex;
     justify-content: right;
     padding-inline-end: 5rem;
-    font-size: 1rem;
-    gap: 1rem;
+    font-size: var(--font-size);
+    gap: var(--font-size);
     margin-block-end: 3rem;
 }
 .icon{
-    border: 1px solid var(--button-bg-color);
+    border: 1px solid var(--primary-white-color);
     border-radius: 50%;
     padding: 0.6rem;
 }
 .icon:hover{
-    color: hsl(300, 69%, 71%);
+    color: var(--hover-color);
     cursor: pointer;
     border: 1px solid var(--hover-color);
 }
