@@ -1,88 +1,77 @@
 :root{
-    --font-size: clamp(0.875rem, 1.5vw, 1rem);
-    --paragraph-font-size: clamp(0.875rem, 2vw, 1rem);
-    --padding-container: 2rem clamp(1rem, 4vw, 3rem);
-    --padding-header: clamp(1.5rem, 4vw, 3rem);;
-    --hover-color: hsl(300, 69%, 71%);
-    --background-primary-color: hsl(257, 40%, 49%);
-    --shadow-color: 0 0.3rem 0.8rem hsl(0, 0%, 32%);
-    --primary-white-color: white;
-    --one-rem: clamp(1rem, 4vw, 3rem);
-    --margin-right: 5rem;
+    --purple: hsl(257, 40%, 49%);
+    --magenta:hsl(300, 69%, 71%);
 }
 body{
     margin: 0;
-    background-color: var(--background-primary-color);
+    padding: 0;
+    background-color: var(--purple);
     background-image: url(bg-desktop.svg);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
-    font-family: 'Open Sans', sans-serif;
 }
 header{
-    padding: var(--padding-header);
+    padding: clamp(2.5rem, 4.5vw, 3rem);
 }
 header img{
-    width: clamp(7rem, 15vw, 12rem);
+    width: min(20% - 2.5rem);
 }
-.container{
-    padding: var(--padding-container);
-}
-
 figure{
-    margin: 0;
     display: flex;
-    color: var(--primary-white-color);
-    align-items: center;
-    gap: var(--margin-right);
-}
-figcaption{
-    width: 45%; 
-    padding-inline-end: clamp(1.5rem, 4vw, 2.5rem); 
+    justify-content: center;
+    margin-inline: clamp(2.5rem, 4.5vw, 3rem);
+    gap: clamp(2.5rem, 4.5vw, 3rem);
 }
 figure img{
-    width: 55%;
+    width: min(50% - 2.5rem)
 }
-h1{
-    font-size: clamp(1.5rem, 4vw, 2rem);
-    margin-block-end: clamp(1rem, 3vw, 1.5rem);
+figcaption{
+    width: min(50%- 2.5rem);
+    margin-block-start: clamp(2rem, 5vw, 2.5rem);
+}
+figcaption h1{
+    margin-inline-end: clamp(1.5rem, 4vw, 2rem);
+    font-size: clamp(2.5rem, 6vw, 3rem);
+    margin-block: 0;
+    color: white;
     font-family: 'Poppins', sans-serif;
 }
-p{
-    font-size: var(--paragraph-font-size);
-    line-height: 1.6;
+figcaption p{
+    margin-inline-end: clamp(0.875rem, 2vw, 1rem);
+    font-size: clamp(0.875rem, 2vw, 1rem);
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    color: hsl(0, 0%, 90%);
 }
 button{
-    padding-inline: clamp(2rem, 5vw, 4rem);
-    padding-block: var(--font-size);
-    border-radius: 2rem;
+    margin: clamp(0.7rem, 1.5vw, 1rem);
+    padding-block: clamp(0.7rem, 1.5vw, 1rem);
+    padding-inline: clamp(3rem, 6vw, 4rem);
     border: none;
-    cursor: pointer;
-    background-color: var(--primary-white-color);
-    color: var(--background-primary-color);
-    font-size: var(--font-size);
-    box-shadow: var(--shadow-color);
+    border-radius: clamp(2.5rem, 4.5vw, 3rem);
+    font-size: clamp(0.875rem, 2vw, 1rem);
+    box-shadow: 0 0.1rem 1rem hsl(0, 0%, 18%);
+    color: var(--purple);
+    background-color: white;
 }
 button:hover{
-    background-color:var(--hover-color);
-    color: var(--primary-white-color);
+    cursor: pointer;
+    background-color: var(--magenta);
+    color: white;
 }
 footer{
-    color: var(--primary-white-color);
-    display: flex;
+    display:flex;
     justify-content: right;
-    padding-inline-end: var(--margin-right);
-    font-size: var(--font-size);
-    gap: var(--font-size);
-    margin-block-end: var(--margin-right);
+    align-items: right;
+    gap: clamp(0.5rem, 1vw, 0.7rem);
+    font-size: clamp(0.875rem, 2vw, 1rem);
+    margin-inline-end: clamp(2.5rem, 4.5vw, 3rem);
+    margin-block-end: clamp(2.5rem, 4.5vw, 3rem);
 }
 .icon{
-    border: 1px solid var(--primary-white-color);
+    border: 1px solid hsl(0, 0%, 85%);
     border-radius: 50%;
-    padding: 0.6rem;
-}
-.icon:hover{
-    color: var(--hover-color);
-    cursor: pointer;
-    border: 1px solid var(--hover-color);
+    color: hsl(0, 0%, 100%);
+    padding: clamp(0.25rem, 1vw, 0.5rem);
 }
