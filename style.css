@@ -1,6 +1,8 @@
 :root{
     --purple: hsl(257, 40%, 49%);
     --magenta:hsl(300, 69%, 71%);
+    --white: hsl(0, 0%, 100%);
+    --off-white:hsl(0, 0%, 85%);
 }
 body{
     margin: 0;
@@ -12,40 +14,40 @@ body{
     min-height: 100vh;
 }
 header{
-    padding: clamp(2.5rem, 4.5vw, 3rem);
+    margin: clamp(2.5rem, 4.5vw, 3rem);
 }
 header img{
-    width: min(20% - 2.5rem);
+    width: min(20%);
 }
 figure{
     display: flex;
     justify-content: center;
     margin-inline: clamp(2.5rem, 4.5vw, 3rem);
     gap: clamp(2.5rem, 4.5vw, 3rem);
+    margin-block-end: 0px;
 }
 figure img{
-    width: min(50% - 2.5rem)
+    width: min(50%)
 }
 figcaption{
-    width: min(50%- 2.5rem);
+    width: min(45%);
     margin-block-start: clamp(2rem, 5vw, 2.5rem);
 }
 figcaption h1{
     margin-inline-end: clamp(1.5rem, 4vw, 2rem);
     font-size: clamp(2.5rem, 6vw, 3rem);
     margin-block: 0;
-    color: white;
+    color: var(--white);
     font-family: 'Poppins', sans-serif;
 }
 figcaption p{
-    margin-inline-end: clamp(0.875rem, 2vw, 1rem);
-    font-size: clamp(0.875rem, 2vw, 1rem);
+    font-size: clamp(1rem, 2vw, 1.25rem);
     font-family: 'Open Sans', sans-serif;
-    line-height: 1.5;
-    color: hsl(0, 0%, 90%);
+    line-height: 1.6;
+    color: var(--off-white);
 }
 button{
-    margin: clamp(0.7rem, 1.5vw, 1rem);
+    margin-block: clamp(0.7rem, 1.5vw, 1rem);
     padding-block: clamp(0.7rem, 1.5vw, 1rem);
     padding-inline: clamp(3rem, 6vw, 4rem);
     border: none;
@@ -53,25 +55,32 @@ button{
     font-size: clamp(0.875rem, 2vw, 1rem);
     box-shadow: 0 0.1rem 1rem hsl(0, 0%, 18%);
     color: var(--purple);
-    background-color: white;
+    background-color: var(--white);
 }
 button:hover{
     cursor: pointer;
     background-color: var(--magenta);
-    color: white;
+    color: var(--white);
 }
 footer{
     display:flex;
     justify-content: right;
     align-items: right;
     gap: clamp(0.5rem, 1vw, 0.7rem);
-    font-size: clamp(0.875rem, 2vw, 1rem);
-    margin-inline-end: clamp(2.5rem, 4.5vw, 3rem);
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    margin-inline: clamp(2.5rem, 4.5vw, 3rem);
+    margin-block-start: 0px;
     margin-block-end: clamp(2.5rem, 4.5vw, 3rem);
 }
 .icon{
-    border: 1px solid hsl(0, 0%, 85%);
+    border: 1px solid var(--off-white);
     border-radius: 50%;
-    color: hsl(0, 0%, 100%);
+    color: var(--white);
     padding: clamp(0.25rem, 1vw, 0.5rem);
+    cursor: pointer;
+    
+}
+.icon:hover{
+    color: var(--magenta);
+    border-color: var(--magenta);
 }
