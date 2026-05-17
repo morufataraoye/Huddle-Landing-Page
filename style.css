@@ -8,6 +8,7 @@
     --shadow-color: 0 0.3rem 0.8rem hsl(0, 0%, 32%);
     --primary-white-color: white;
     --one-rem: clamp(1rem, 4vw, 3rem);
+    --margin-right: 5rem;
 }
 body{
     margin: 0;
@@ -33,7 +34,7 @@ figure{
     display: flex;
     color: var(--primary-white-color);
     align-items: center;
-    gap: 5rem;
+    gap: var(--margin-right);
 }
 figcaption{
     width: 45%; 
@@ -70,10 +71,10 @@ footer{
     color: var(--primary-white-color);
     display: flex;
     justify-content: right;
-    padding-inline-end: 5rem;
+    padding-inline-end: var(--margin-right);
     font-size: var(--font-size);
     gap: var(--font-size);
-    margin-block-end: 3rem;
+    margin-block-end: var(--margin-right);
 }
 .icon{
     border: 1px solid var(--primary-white-color);
