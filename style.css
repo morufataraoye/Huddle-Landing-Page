@@ -11,7 +11,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
-    font-family: sans-serif;
+    font-family: 'Open-Sans', sans-serif;
 }
 header{
     padding: var(--padding-header);
@@ -32,14 +32,15 @@ figure{
 }
 figcaption{
     width: 45%; 
-    padding-right: 4rem; 
+    padding-right: 5rem; 
 }
 figure img{
     width: 55%;
 }
 h1{
-    font-size: clamp(1.25rem, 3vw, 1.5rem);
+    font-size: clamp(1.5rem, 4vw, 2rem);
     margin-bottom: 1rem;
+    font-family: 'Poppins';
 }
 p{
     font-size: var(--paragraph-font-size);
@@ -60,4 +61,18 @@ button{
 button:hover{
     background-color: hsl(300, 69%, 71%);
     color: white;
+}
+footer{
+    color: white;
+    display: flex;
+    justify-content: right;
+    padding-right: 5rem;
+    font-size: 1.5rem;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    border-radius: 3rem;
+}
+.fa-brands.fa-twitter:hover{
+    color: hsl(300, 69%, 71%);
+    cursor: pointer;
 }
